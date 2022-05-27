@@ -1,5 +1,7 @@
 # Retro Week \##
 
+27 Mei 2022
+
 ## Wat ging goed
 1. Afronden van scrum en gebruik maken van Jira
 2. Git learning en GitHub (eindelijk) begrijpen edaarmee werken.
@@ -10,3 +12,6 @@
 
 ## Actiepunten voor volgende week
 * Wat meer met Git en GitHub spelen. (Dus met GitHub for Desktop, GitBash en GitKraken)
+
+
+

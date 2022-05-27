@@ -1,0 +1,24 @@
+#BoxBox {
+    border: solid 1px black;
+    background-color: lightgreen;
+}
+
+p {
+    background-color: rgb(40, 161, 40);
+    border: solid 1px black;
+} 
+ 
+
+#blockBox {
+    margin-top: 1px;
+}
+
+#inlineBlock {
+    margin-bottom: 1px;
+}
+
+.inlineSpan {
+    background-color: white;
+    /* width: 10px;
+    height: 10px; */
+}

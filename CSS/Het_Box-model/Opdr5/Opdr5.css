@@ -1,0 +1,19 @@
+#parentBox {
+    background-color: rgb(33, 167, 33);
+    border: solid 1px black;
+}
+
+.headerBox {
+    border: solid 1px black;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.siblingBox {
+    border: solid 1px black;
+    background-color: aquamarine;
+    padding: 20px 10px;
+    text-align: center;
+}
+
