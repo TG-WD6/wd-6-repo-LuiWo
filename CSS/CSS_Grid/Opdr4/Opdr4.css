@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 20vh);
+}
+
+.gridBox {
+    border: black solid 1px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.leftSidebar {
+  background-color: lightgreen;
+  /* grid-column: 1/ span 1;
+  grid-row: 1/ span 2;
+  padding-top: 135px; */
+}
+
+.topArticle {
+    /* grid-column: 2/ span 2;
+    grid-row: 1/ span 1; */
+}
+
+.botArticle {
+    /* grid-column: 2/ span 2;
+    grid-row: 2/ span 1; */
+}

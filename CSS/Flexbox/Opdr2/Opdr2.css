@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(245, 239, 151);
+}
+
+#boxContainer {
+    display: flex;
+    column-gap: 20px;
+    justify-content: end;
+}
+
+.box {
+    background-color: rgb(130, 234, 130);
+    padding: 50px;
+}
