@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gridBox {
+    border: black solid 1px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+   
+}
+
+.leftSidebar {
+  background-color: lightgreen;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.topArticle {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.botArticle {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}

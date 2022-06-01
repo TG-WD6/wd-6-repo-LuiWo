@@ -1,0 +1,77 @@
+.boxContainer {
+  border: solid 1px black;
+  width: 70%
+}
+
+
+
+.box {
+    border: solid 1px black;
+    width: 100px;
+    height: 70px;
+    margin: 20px 15px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.one {
+  border: solid 1px black;
+  background-color: aliceblue;
+  border-radius: none;
+  transition: border-radius 1s ease-in, background-color 1s ease-in;
+}
+
+.one:hover {
+    background-color: red;
+    border-radius: 100%;
+}
+
+.two {
+    border: solid 1px black;
+    background-color: aliceblue;
+    border-radius: none;
+    transition: border-radius 1s ease-in, background-color 1s ease-in;
+}
+
+.two:hover {
+    background-color: red;
+    border-radius: 25%;
+}
+
+.three {
+    border: solid 1px black;
+    background-color: aliceblue;
+    border-radius: none;
+    transition: background-color 1s ease-in;
+}
+
+.three:hover {
+    background-color: red;
+}
+
+
+
+
+.four {
+    border: solid 1px black;
+    background-color: aliceblue;
+    border-radius: none;
+    transition: background-color 1s ease-in;
+}
+
+.four:hover {
+    background-color: red;
+}
+
+
+.five {
+    border: solid 1px black;
+    background-color: aliceblue;
+    border-radius: none;
+    transition: background-color 1s ease-in;
+}
+
+.five:hover {
+    background-color: red;
+}

@@ -1,0 +1,34 @@
+.container {
+    background-color: aliceblue;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 1fr;
+    grid-template-areas: 
+    "top top side"
+    "bot bot side"
+    ". . side";
+}
+
+
+.gridBox {
+    border: black solid 1px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+   
+}
+
+.leftSidebar {
+  background-color: lightgreen;
+  grid-area: side;
+}
+
+.topArticle {
+  grid-area: top;
+}
+
+.botArticle {
+  grid-area: bot;
+}
