@@ -1,16 +1,52 @@
 button {
     background-color: aqua;
     color: white;
+    border: none;
     font-size: 2rem;
-    width: 500px;
+    width: 350px;
     height: 80px;
+    /* position: absolute; */
 }
 
-button:hover {
-    color: black;
-    padding: 0px;
-    border-color: orange;
-    border-style: solid;
-    border-width: 10px;
+
+/* Needs to be two squars on both ends. DON'T FORGET TO ADD content:""; */
+/* .press {
+    width: 1500px;
+    height: 500px; */
+    /* border: solid 1px black;
+    
+} */
+
+
+.press:hover::before{
+    content:"";
+    padding-left: 60px;
+    padding-top: 12px;
+    padding-bottom: 23px;
+    border-top-color: orange;
+    border-left-color: orange;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-top-width: 10px;
+    border-left-width: 10px;
+    position: relative;
+    left: -60px;
 }
+
+.press:hover::after{
+    content:"";
+    padding-right:60px;
+    padding-top: 22px;
+    padding-bottom: 13px;
+    height:80px;
+    border-bottom-color: orange;
+    border-right-color: orange;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-bottom-width: 10px;
+    border-right-width: 10px;
+    position: relative;
+    left: 60px;
+}
+
 
