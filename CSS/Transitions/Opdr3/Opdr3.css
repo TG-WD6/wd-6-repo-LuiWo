@@ -7,11 +7,11 @@
 
 .box {
     border: solid 1px black;
-    width: 100px;
-    height: 70px;
+    width: 10px;
+    /* height: 80px; */
     margin: 20px 15px;
     text-align: center;
-    padding-top: 50px;
+    padding: 20px;
 }
 
 

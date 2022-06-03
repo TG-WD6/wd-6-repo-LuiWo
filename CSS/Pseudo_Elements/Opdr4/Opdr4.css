@@ -30,8 +30,11 @@ body {
     position: relative;
     bottom: 90px;
     left: 10px;
-    padding: 25px;
-    font-size: 1.75rem;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 2.5rem;
 }
 
 .dot{
@@ -53,3 +56,8 @@ body {
     bottom: 125px;
     left: 225px;
 }
+
+
+
+/* BEFORE  */
+
