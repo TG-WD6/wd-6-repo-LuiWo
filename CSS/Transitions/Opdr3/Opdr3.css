@@ -1,6 +1,13 @@
 .boxContainer {
   border: solid 1px black;
-  width: 70%
+  width: 400px;
+  margin: 0;
+  transform: none;
+  transition: transform 5s linear;
+}
+
+.boxContainer:hover {
+    transform: unset;
 }
 
 
@@ -8,30 +15,36 @@
 .box {
     border: solid 1px black;
     width: 10px;
-    /* height: 80px; */
-    margin: 20px 15px;
     text-align: center;
     padding: 20px;
+    margin: 5px;
+    /* transform: none;
+    transition: transform 5s linear; */
 }
 
+/* .box:hover {
+    transform: none;
+} */
 
 .one {
   border: solid 1px black;
   background-color: aliceblue;
   border-radius: none;
-  transition: border-radius 1s ease-in, background-color 1s ease-in;
+  transform: none;
+  transition: border-radius 5s ease-in, background-color 5s ease-in, transform 5s ease-in-out;
 }
 
 .one:hover {
     background-color: red;
     border-radius: 100%;
+    transform: translateX(340px);
 }
 
 .two {
     border: solid 1px black;
     background-color: aliceblue;
     border-radius: none;
-    transition: border-radius 1s ease-in, background-color 1s ease-in;
+    transition: border-radius 1s ease-in, background-color 1s ease-in, transform 5s linear;
 }
 
 .two:hover {
@@ -75,3 +88,8 @@
 .five:hover {
     background-color: red;
 }
+
+
+
+
+/* Use Animation on the boxes then use transition on the container hover effect to activate animation effects from boxes? */
