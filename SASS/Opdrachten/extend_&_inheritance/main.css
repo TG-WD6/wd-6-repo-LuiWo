@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.container, .container-child {
+  width: 90%;
+  height: 100vh;
+  border: 4px solid white;
+}
+
+@media screen and (max-device-width: 1600px) {
+  h1 {
+    background-color: blue;
+  }
+  .container, .container-child {
+    border: 4px solid blue;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  h1 {
+    background-color: yellow;
+  }
+  .container, .container-child {
+    border: 4px dotted yellow;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  h1 {
+    background-color: red;
+  }
+  .container, .container-child {
+    border: 4px dashed red;
+  }
+}
+
+.container-child {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */

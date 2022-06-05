@@ -1,0 +1,48 @@
+@-webkit-keyframes color-change {
+  from {
+    background-color: purple;
+  }
+  to {
+    background-color: orange;
+  }
+}
+
+@keyframes color-change {
+  from {
+    background-color: purple;
+  }
+  to {
+    background-color: orange;
+  }
+}
+
+.button {
+  background-color: #1dcfdc;
+  color: #4f4444;
+  border-radius: 20%;
+  width: 200px;
+  padding: 5px;
+  font-size: 30px;
+  border: 2px solid #1dcfdc;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #4f4444;
+  color: #1dcfdc;
+  border: 2px solid #4f4444;
+}
+
+.colorChangingSquare {
+  width: 80px;
+  height: 80px;
+  border: 4px solid black;
+  background-color: purple;
+}
+
+.colorChangingSquare:hover {
+  -webkit-animation: color-change 3s linear;
+          animation: color-change 3s linear;
+}
+/*# sourceMappingURL=main.css.map */
