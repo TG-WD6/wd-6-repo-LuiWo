@@ -1,0 +1,28 @@
+@import "navbar";
+
+
+.productContainer {
+    border: $borderDeco;
+    width: 99%;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: row;
+    border: $borderDeco;
+    margin: 15px 20px;
+}
+
+.productDiscription {
+    width: 80%;
+    margin:auto;
+}
+
+.productCheckOut {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-right: 10px;
+}

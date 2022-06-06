@@ -1,0 +1,24 @@
+@import "navbar";
+
+$screenHeight: 70vh;
+
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-around;
+    border: $borderDeco;
+    width: 450px;     // change width with mediaquerri into %
+    margin: 50px auto;
+    height: $screenHeight;
+
+   .loginImg {
+    padding: 15px 0;
+  }
+
+}
+
+
+// .loginFrom {
+    
+// }
