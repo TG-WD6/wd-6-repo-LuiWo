@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "main.scss",
+        "_navbar.scss",
+        "_login.scss",
+        "_product_card.scss",
+        "_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
