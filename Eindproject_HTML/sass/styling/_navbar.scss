@@ -1,4 +1,5 @@
-$borderDeco: 1px solid black;
+$screenHeight: 85vh;
+$borderDeco: 1px solid rgb(0, 0, 0);
 $textColor: whitesmoke;
 $background: rgb(59, 4, 59);
 $fontSize: (
@@ -8,20 +9,17 @@ $fontSize: (
     "large": 2rem,
 );
 
-// $fontFam: (
-
-// );
-
 
 .navBar {
     width: 99%;
     height: 75px;
     display: flex;
     border: $borderDeco;
-    margin: auto;
+    margin: 15px auto;
     background-color: $background;
     color: $textColor;
     font-size: map-get($fontSize, medium);
+    
 }
 
 .navImg {
@@ -43,11 +41,16 @@ $fontSize: (
 .navList {
     list-style: none;
     font-weight: bold;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $textColor;
+    }
 }
 
-// .navLinks {
-  
-// }
 
 
 

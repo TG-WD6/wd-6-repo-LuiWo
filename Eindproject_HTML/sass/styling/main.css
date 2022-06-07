@@ -5,7 +5,7 @@
   display: -ms-flexbox;
   display: flex;
   border: 1px solid black;
-  margin: auto;
+  margin: 15px auto;
   background-color: #3b043b;
   color: whitesmoke;
   font-size: 1.5rem;
@@ -39,6 +39,14 @@
 .navList {
   list-style: none;
   font-weight: bold;
+}
+
+.navList a {
+  text-decoration: none;
+}
+
+.navList a:visited {
+  color: whitesmoke;
 }
 
 .navBar {
@@ -48,7 +56,7 @@
   display: -ms-flexbox;
   display: flex;
   border: 1px solid black;
-  margin: auto;
+  margin: 15px auto;
   background-color: #3b043b;
   color: whitesmoke;
   font-size: 1.5rem;
@@ -82,6 +90,14 @@
 .navList {
   list-style: none;
   font-weight: bold;
+}
+
+.navList a {
+  text-decoration: none;
+}
+
+.navList a:visited {
+  color: whitesmoke;
 }
 
 .loginCard {
@@ -95,59 +111,92 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid black;
   width: 450px;
-  margin: 50px auto;
-  height: 70vh;
+  margin: 30px auto;
+  height: 85vh;
 }
 
 .loginCard .loginImg {
-  padding: 15px 0;
+  padding-top: 15px;
+  margin-bottom: 50px;
 }
 
-.navBar {
-  width: 99%;
-  height: 75px;
+.loginCard .loginImg img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.loginCard figcaption {
+  text-align: center;
+}
+
+.loginCard figcaption h2 {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+.loginCard figcaption p {
+  font-size: 1.5rem;
+  color: gray;
+  opacity: 0.5;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.loginForm {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
-  margin: auto;
-  background-color: #3b043b;
-  color: whitesmoke;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginForm label {
+  margin: 2px;
+}
+
+.loginForm input {
+  width: 350px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.loginForm input #emailF, .loginForm input #passwordF {
+  height: 50px;
+}
+
+.loginForm a {
+  position: relative;
+  left: 100px;
+}
+
+#rememberMe {
+  width: 10px;
   font-size: 1.5rem;
 }
 
-.navImg {
-  width: 200px;
-  height: 55px;
+button {
+  margin-top: 5px;
   padding: 10px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  font-size: 2rem;
+  background-color: #1479c1;
 }
 
-.navItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-}
-
-.navList {
-  list-style: none;
-  font-weight: bold;
+button .icons {
+  width: 25px;
+  height: 25px;
+  padding: 5px 5px 0;
+  background-color: #1479c1;
 }
 
 .productContainer {
@@ -165,6 +214,16 @@
           flex-direction: row;
   border: 1px solid black;
   margin: 15px 20px;
+}
+
+.productCard figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .productDiscription {
@@ -188,6 +247,13 @@
   padding-right: 10px;
 }
 
+.productImg {
+  width: 165px;
+  height: 165px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +272,6 @@ footer {
 }
 
 body {
-  background-color: aqua;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

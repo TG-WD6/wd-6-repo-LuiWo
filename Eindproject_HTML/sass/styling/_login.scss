@@ -1,24 +1,90 @@
 @import "navbar";
 
-$screenHeight: 70vh;
-
 .loginCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-content: space-around;
-    border: $borderDeco;
-    width: 450px;     // change width with mediaquerri into %
-    margin: 50px auto;
-    height: $screenHeight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: $borderDeco;
+  width: 450px; // change width with mediaquerri into %
+  margin: 30px auto;
+  height: $screenHeight;
 
-   .loginImg {
-    padding: 15px 0;
+  .loginImg {
+    padding-top: 15px;
+    margin-bottom: 50px;
+
+    img {
+      width: 250px;
+      height: 250px;
+      border: $borderDeco;
+      border-radius: 10%;
+    }
   }
+
+  figcaption {
+    text-align: center;
+
+    h2 {
+      font-size: map-get($fontSize, large );
+      margin: 5px 0;
+    }
+
+     p {
+      font-size: map-get($fontSize, medium );
+       color: gray;
+       opacity: 0.5;
+       padding-top: 10px;
+       margin-bottom: 0;
+     }
+
+  }
+}
+
+.loginForm {
+  // height:200px;
+   width: auto;
+   display: flex;
+   flex-direction: column;
+
+  label {
+     margin: 2px;
+  }
+
+   input {
+    //  @extend label;
+     width: 350px;
+     border-top: none;
+     border-right: none;
+     border-left: none;
+   }
+
+   a {
+    // display: inline-block;
+    position: relative;
+    left: 100px;
+   }
 
 }
 
+#rememberMe {
+  width: 10px;
+  font-size: map-get($fontSize, medium );
+}
 
-// .loginFrom {
-    
-// }
+
+button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: map-get($fontSize , large );
+  background-color: rgb(20, 121, 193);
+
+  
+    .icons {
+       width: 25px;
+       height: 25px;
+       padding: 5px 5px 0;
+       background-color: rgb(20, 121, 193);
+    }
+
+}

@@ -15,47 +15,52 @@
         alt="Techgrounds Logo"
       />
       <ul class="navItems">
-        <li class="navList"><a class="navLinks" href="#">Home</a></li>
-        <li class="navList"><a class="navLinks" href="#">Popular</a></li>
-        <li class="navList"><a class="navLinks" href="#">Contact</a></li>
+        <li class="navList"><a href="#">Home</a></li>
+        <li class="navList"><a href="#">Popular</a></li>
+        <li class="navList"><a href="#">Contact</a></li>
       </ul>
     </nav>
 
     <div class="loginCard">
       <figure class="loginImg">
-        <img scr="#" alt="" />
+        <img src="/Eindproject_HTML/images/LoginImage.jpg" alt="A login image in a form of a person" />
         <figcaption>
-          <h3>Login</h3>
+          <h2>Login</h2>
           <p>Login with Your Email</p>
         </figcaption>
       </figure>
 
-      <form class="loginForm">
-        <label>
-          <input type="email" placeholder="email" />
+      <form class="loginForm" action="#">
+        <label for="emailF">Email<br>
+          <input type="email" id="emailF" name="emailF" placeholder="email" />
         </label>
         <br />
-        <label>
-          <input type="password" placeholder="password" />
+        <label for="passwordF">Password<br>
+          <input type="password" id="passwordF" name="passwordF" placeholder="password" required/>
         </label>
         <br />
-        <label>
-          <input type="checkbox" />
-          Remember me
+
+        <label for="rememberMe"> 
+          <input type="checkbox" id="rememberMe" value="rememberMeLogin">
+         Remember me 
+         <a href="#">Forget Password?</a>
         </label>
-        <a>Forget Password?</a>
+
+        
         <br />
-        <label>
-          <img scr="#icon" />
-          <input type="submit" value="Login" />
-        </label>
+       
+          <button type="submit">
+            <img class="icons" src="/Eindproject_HTML/images/rocket-lunch.png" />
+            Login
+          </button>
+       
       </form>
     </div>
 
-    <div class="productContainer">
+    <!-- <div class="productContainer">
       <div class="productCard">
         <figure>
-          <img class="productImg" scr="#" alt="" />
+          <img class="productImg" src="/Eindproject_HTML/images/ProductImg.jpg"  alt="" />
           <figcaption class="productDiscription">
             <h6>tiny text</h6>
             <h5>Login</h5>
@@ -75,7 +80,7 @@
       </div>
       <div class="productCard">
         <figure>
-          <img class="productImg" scr="#" alt="" />
+          <img class="productImg" src="/Eindproject_HTML/images/ProductImg.jpg" alt="" />
           <figcaption class="productDiscription">
             <h6>tiny text</h6>
             <h5>Login</h5>
@@ -95,7 +100,7 @@
       </div>
       <div class="productCard">
         <figure>
-          <img class="productImg" scr="#" alt="" />
+          <img class="productImg" src="/Eindproject_HTML/images/ProductImg.jpg"  alt="" />
           <figcaption class="productDiscription">
             <h6>tiny text</h6>
             <h5>Login</h5>
@@ -113,9 +118,9 @@
           <button class="addToCart">box icon</button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <footer>
+    <!-- <footer>
       <ul class="footerNav">
         <li>Klantenservice</li>
         <li>Contact opnemen</li>
@@ -160,6 +165,6 @@
           <img src="" alt="" />
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

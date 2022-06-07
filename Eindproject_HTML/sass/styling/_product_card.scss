@@ -1,4 +1,3 @@
-@import "navbar";
 
 
 .productContainer {
@@ -11,6 +10,13 @@
     flex-direction: row;
     border: $borderDeco;
     margin: 15px 20px;
+
+   
+     figure {
+         display: flex;
+         flex-direction: row;
+     }
+
 }
 
 .productDiscription {
@@ -25,4 +31,13 @@
     justify-content: space-evenly;
     margin: auto;
     padding-right: 10px;
+}
+
+
+.productImg {
+    width: 165px;
+    height: 165px;
+    border:$borderDeco;
+    border-radius:  10%;
+
 }
