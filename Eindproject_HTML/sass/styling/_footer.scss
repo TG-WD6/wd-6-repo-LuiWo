@@ -5,9 +5,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: rgba(128, 128, 128, 0.053);
 
   div {
     @extend footer;
+    background-color: rgba(128, 128, 128, 0);
   }
 }
 
@@ -25,12 +27,18 @@ footer {
     margin: 2px;
     color: gray;
   }
-}
 
-.footerNav::first-line {
-  font-weight: bold;
-  color: black;
-  opacity: none;
+  a {
+    text-decoration: none;
+    span {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  a:visited {
+    color: gray;
+  }
 }
 
 .socialsContainer {
@@ -51,4 +59,19 @@ footer {
     height: 25px;
     padding: 2px 5px;
   }
+}
+
+
+@media screen and (max-width: 495px) and (orientation: portrait) {
+ 
+  footer {
+    min-width: 420px;
+    justify-content: space-around;
+  
+  }
+
+   .footerNav {
+      margin: 5px;
+   }
+  
 }

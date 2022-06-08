@@ -1,5 +1,5 @@
 .productContainer {
-  border: $borderDeco;
+  // border: $borderDeco;
   width: 99%;
 }
 
@@ -7,8 +7,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: $borderDeco;
+  // border: $borderDeco;
   margin: 15px 20px;
+  background-color: rgba(128, 128, 128, 0.053);
 
   figure {
     display: flex;
@@ -37,11 +38,9 @@
 .productImg {
   width: 165px;
   height: 165px;
-  border: $borderDeco;
+  // border: $borderDeco;
   border-radius: 10%;
 }
-
-// At @ 700, media querrie to place checkout below product discription
 
 .productCheckOut {
   width: 20%;
@@ -74,4 +73,43 @@
   font-family: "Roboto", sans-serif;
   font-size: map-get($fontSize, large);
   font-weight: 900;
+}
+
+@media screen and (max-width: 822px) and (orientation: portrait) {
+  .productCard {
+    flex-direction: column;
+
+    figure {
+      width: auto;
+      max-height: 210px;
+    }
+  }
+
+  .productDiscription {
+    flex-direction: row;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .productCheckOut {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+
+    .priceTag,
+    p,
+    .addToCard {
+      margin: 0 3px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 495px) and (orientation: portrait) {
+ 
+  .productCard {
+    min-width: 400px;
+  }
 }

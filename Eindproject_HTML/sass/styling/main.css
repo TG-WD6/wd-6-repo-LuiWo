@@ -137,7 +137,7 @@
 
 .loginCard .loginImg {
   padding-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .loginCard .loginImg img {
@@ -179,6 +179,18 @@
 
 .loginForm label {
   margin: 2px;
+  font-size: 1.25rem;
+}
+
+.loginForm label input[type="email"],
+.loginForm label input[type="password"] {
+  line-height: 2rem;
+  font-size: 1.25rem;
+}
+
+.loginForm label input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
 }
 
 .loginForm input {
@@ -190,7 +202,7 @@
 
 .loginForm a {
   position: relative;
-  left: 100px;
+  left: 60px;
 }
 
 .loginForm button {
@@ -209,13 +221,14 @@
   background-color: #1479c1;
 }
 
-.loginForm #rememberMe {
-  width: 10px;
-  font-size: 1.5rem;
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  .loginCard {
+    width: 400px;
+    margin: auto;
+  }
 }
 
 .productContainer {
-  border: 1px solid black;
   width: 99%;
 }
 
@@ -230,8 +243,8 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border: 1px solid black;
   margin: 15px 20px;
+  background-color: rgba(128, 128, 128, 0.053);
 }
 
 .productCard figure {
@@ -265,7 +278,6 @@
 .productImg {
   width: 165px;
   height: 165px;
-  border: 1px solid black;
   border-radius: 10%;
 }
 
@@ -304,9 +316,52 @@
 
 .priceTag {
   color: red;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 900;
+}
+
+@media screen and (max-width: 822px) and (orientation: portrait) {
+  .productCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .productCard figure {
+    width: auto;
+    max-height: 210px;
+  }
+  .productDiscription {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .productCheckOut {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+  }
+  .productCheckOut .priceTag,
+  .productCheckOut p,
+  .productCheckOut .addToCard {
+    margin: 0 3px;
+  }
+}
+
+@media screen and (max-width: 495px) and (orientation: portrait) {
+  .productCard {
+    min-width: 400px;
+  }
 }
 
 .navBar {
@@ -381,6 +436,11 @@ footer, footer div {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: rgba(128, 128, 128, 0.053);
+}
+
+footer div {
+  background-color: rgba(128, 128, 128, 0);
 }
 
 .footerNav, .socialsContainer {
@@ -399,10 +459,17 @@ footer, footer div {
   color: gray;
 }
 
-.footerNav::first-line, .socialsContainer::first-line {
-  font-weight: bold;
+.footerNav a, .socialsContainer a {
+  text-decoration: none;
+}
+
+.footerNav a span, .socialsContainer a span {
   color: black;
-  opacity: none;
+  font-weight: bold;
+}
+
+.footerNav a:visited, .socialsContainer a:visited {
+  color: gray;
 }
 
 .socialsContainer {
@@ -437,7 +504,20 @@ footer, footer div {
   padding: 2px 5px;
 }
 
+@media screen and (max-width: 495px) and (orientation: portrait) {
+  footer, footer div {
+    min-width: 420px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footerNav, .socialsContainer {
+    margin: 5px;
+  }
+}
+
 body {
   background-color: white;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

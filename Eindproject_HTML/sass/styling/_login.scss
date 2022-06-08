@@ -11,7 +11,7 @@
 
   .loginImg {
     padding-top: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     img {
       width: 250px;
@@ -48,6 +48,18 @@
 
   label {
     margin: 2px;
+    font-size: map-get($fontSize, normal);
+
+    input[type="email"],
+    input[type="password"] {
+      line-height: 2rem;
+      font-size: map-get($fontSize, normal);
+    }
+
+    input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   input {
@@ -59,7 +71,7 @@
 
   a {
     position: relative;
-    left: 100px;
+    left: 60px;
   }
 
   button {
@@ -77,9 +89,16 @@
       background-color: rgb(20, 121, 193);
     }
   }
+}
 
-  #rememberMe {
-    width: 10px;
-    font-size: map-get($fontSize, medium);
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  .loginCard{
+    // flex-shrink: 1;
+    width: 400px;
+    margin: auto;
   }
+
+  // .loginForm {
+
+  // }
 }
