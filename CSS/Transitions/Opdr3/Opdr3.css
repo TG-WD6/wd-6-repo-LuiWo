@@ -1,95 +1,58 @@
-.boxContainer {
+.container {
   border: solid 1px black;
   width: 400px;
   margin: 0;
   transform: none;
-  transition: transform 5s linear;
+  width: 1000px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.boxContainer:hover {
-    transform: unset;
+.container:hover div {
+  transform: translateX(890px);
+  background-color: red;
 }
 
-
-
-.box {
-    border: solid 1px black;
-    width: 10px;
-    text-align: center;
-    padding: 20px;
-    margin: 5px;
-    /* transform: none;
-    transition: transform 5s linear; */
+.container:hover .box1 {
+     border-radius: 100%;
 }
 
-/* .box:hover {
-    transform: none;
+.container:hover .box2 {
+    border-radius: 30%;
+}
+
+.box1 {
+  background-color: white;
+  transition: background-color 5000ms, transform 5000ms, border-radius 5000ms;
+}
+
+.box2 {
+  background-color: white;
+  transition: background-color 5000ms linear, transform 5000ms linear, border-radius 5000ms linear;
+}
+
+.box3 {
+  background-color: white;
+  transition: background-color 5000ms ease-out, transform 5000ms ease-out;
+}
+
+.box4 {
+  background-color: white;
+  transition: background-color 5000ms ease-in-out, transform 5000ms ease-in-out;
+}
+
+/* .box5 {
+  background-color: white;
+  transition: background-color 5000ms cubic-bezier(0, 0.3, 0.5, 1), transform 5000ms cubic-bezier(1,.99,0,-0.01);
 } */
 
-.one {
-  border: solid 1px black;
-  background-color: aliceblue;
-  border-radius: none;
-  transform: none;
-  transition: border-radius 5s ease-in, background-color 5s ease-in, transform 5s ease-in-out;
+div {
+  width: 80px;
+  padding: 35px 10px;
+  border: 1px solid black;
+  margin: 5px;
+  text-align: center;
+ justify-items: center;
 }
-
-.one:hover {
-    background-color: red;
-    border-radius: 100%;
-    transform: translateX(340px);
-}
-
-.two {
-    border: solid 1px black;
-    background-color: aliceblue;
-    border-radius: none;
-    transition: border-radius 1s ease-in, background-color 1s ease-in, transform 5s linear;
-}
-
-.two:hover {
-    background-color: red;
-    border-radius: 25%;
-}
-
-.three {
-    border: solid 1px black;
-    background-color: aliceblue;
-    border-radius: none;
-    transition: background-color 1s ease-in;
-}
-
-.three:hover {
-    background-color: red;
-}
-
-
-
-
-.four {
-    border: solid 1px black;
-    background-color: aliceblue;
-    border-radius: none;
-    transition: background-color 1s ease-in;
-}
-
-.four:hover {
-    background-color: red;
-}
-
-
-.five {
-    border: solid 1px black;
-    background-color: aliceblue;
-    border-radius: none;
-    transition: background-color 1s ease-in;
-}
-
-.five:hover {
-    background-color: red;
-}
-
-
-
-
-/* Use Animation on the boxes then use transition on the container hover effect to activate animation effects from boxes? */
