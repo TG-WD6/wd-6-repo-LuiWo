@@ -1,0 +1,60 @@
+$screenHeight: 90vh;
+$borderDeco: 1px solid rgb(0, 0, 0);
+$textColor: whitesmoke;
+$background: rgb(59, 4, 59);
+$fontSize: (
+  "small": 0.5rem,
+  "normal": 1.25rem,
+  "medium": 1.5rem,
+  "large": 2rem,
+);
+
+.navBar {
+  width: 99%;
+  height: 75px;
+  display: flex;
+  border: $borderDeco;
+  margin: 15px auto;
+  background-color: $background;
+  color: $textColor;
+  font-size: map-get($fontSize, large);
+}
+
+.navImg {
+  width: 200px;
+  height: 55px;
+  padding: 10px;
+  justify-self: center;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.navList {
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 15px;
+    // padding: 5px 5px 0 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: $textColor;
+  }
+}
+
+// ADD MEDIA QUERIE AT 700PX PORTRAIT : flex direction column
