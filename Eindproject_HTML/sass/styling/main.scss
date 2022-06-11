@@ -3,7 +3,9 @@
 @import "product_card";
 @import "footer";
 
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color:white;

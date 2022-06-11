@@ -14,12 +14,20 @@
     <link rel="stylesheet" href="/Eindproject_HTML/sass/styling/main.css" />
   </head>
   <body>
-   <!-- <nav class="navBar"> 
+    <nav class="navBar">
       <img
         class="navImg"
         src="/Eindproject_HTML/images/TechGroundsLogo.png"
         alt="Techgrounds Logo"
       />
+
+      <div class="menuMobile">
+        <span class="stick1"></span>
+        <span class="stick2"></span>
+        <span class="stick3"></span>
+        <input type="checkbox" id="checkbox" />
+      </div>
+
       <ul class="navItems">
         <li class="navList">
           <img src="/Eindproject_HTML/images/home-3-512.png" /><a href="#"
@@ -37,52 +45,37 @@
           >
         </li>
       </ul>
-    </nav>  -->
+    </nav>
+ 
+    <form class="container">  
+  <div class="loginImg">
+        <img src="/Eindproject_HTML/images/LoginImage.jpg"/>
+      </div>
 
-    <div class="loginCard">
-      <figure class="loginImg">
-        <img
-          src="/Eindproject_HTML/images/LoginImage.jpg"
-          alt="A login image in a form of a person"
-        />
-        <figcaption>
-          <h2>Login</h2>
-          <p>Login with Your Email</p>
-        </figcaption>
-      </figure>
-
-      <form class="loginForm" action="#">
-        <label for="emailF"
-          >Email<br />
-          <input type="email" id="emailF" name="emailF" placeholder="email" />
+      
+        <label  class="formInput">
+         Email: <br>
+          <input type="email" required />
         </label>
-        <br />
-        <label for="passwordF"
-          >Password<br />
-          <input
-            type="password"
-            id="passwordF"
-            name="passwordF"
-            placeholder="password"
-            required
-          />
+        <br>
+        <br>
+        <label class="formInput">
+         Password:
+          <br><input type="password" required />
         </label>
-        <br />
-
-        <label for="rememberMe">
-          <input type="checkbox" id="rememberMe" value="rememberMeLogin" />
-          Remember me
-          <a href="#">Forget Password?</a>
+        <br>
+        <br>
+        <label class="formInput">
+          <span>
+       <input type="checkbox" />  Remember me. 
+        </span>
+       
         </label>
-
-        <br />
-
-        <button type="submit">
-          <img class="icons" src="/Eindproject_HTML/images/login-512.png" />
-          Login
-        </button>
-      </form>
-    </div>
+<a href="#">Forgot password?</a>
+       
+      <button type="#">Login</button>
+    </form> 
+</div>
 
     <div class="productContainer">
       <div class="productCard">
@@ -179,7 +172,9 @@
     <footer>
       <div>
         <ul class="footerNav">
-          <li><a href="#"><span>Klantenservice</span></a></li>
+          <li>
+            <a href="#"><span>Klantenservice</span></a>
+          </li>
           <li><a href="#">Contact opnemen</a></li>
           <li><a href="#">Bestelen &Leveren</a></li>
           <li><a href="#">Betalen</a></li>
@@ -188,7 +183,9 @@
         </ul>
 
         <ul class="footerNav">
-          <li><a href="#"><span>Winkels</span></a></li>
+          <li>
+            <a href="#"><span>Winkels</span></a>
+          </li>
           <li><a href="#"></a>Almere</li>
           <li><a href="#"></a>Amstelveen</li>
           <li><a href="#"></a>Amsterdam</li>
@@ -201,7 +198,9 @@
         </ul>
 
         <ul class="footerNav">
-          <li><a href="#"><span>Ontdek</span></a></li>
+          <li>
+            <a href="#"><span>Ontdek</span></a>
+          </li>
           <li><a href="#">Inspiratie</a></li>
           <li><a href="#">Merken</a></li>
           <li><a href="#">Outlet</a></li>
