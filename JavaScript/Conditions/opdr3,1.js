@@ -30,7 +30,7 @@ if ( x == 4 || y == 8) {
 
 
 // opdr 5)
-if (!x == 4) {
+if (!(x == 4 || y == 8)) {
     console.log("No Result!");
 } else {
     console.log("Result!");
@@ -38,9 +38,11 @@ if (!x == 4) {
 
 
 // opdr 6)
-if ( !(x == 8 && y == 4)) {
-    console.log("Result!")
-};
+if ( !(x == 4 && y == 8)) {
+    console.log("No Result!")
+}  else {
+    console.log("Result!");
+}
 
 
 // Opdr 7 t/m 11)
@@ -57,4 +59,5 @@ if ( big >= 5 && tiny <= 10) {
 } else if( big <= 35 || big >= 40 && tiny <= 45 ) {
     console.log("I'm eiher smaller then 35 or between 40 and 45");
 }
+
 

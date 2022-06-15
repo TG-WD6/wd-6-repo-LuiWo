@@ -12,10 +12,9 @@ var input = document.getElementById(inputField);
 
 
 // Opdr 3)
-function change(input) {
-    console.log(input);
-    return console.log(input * 2); ; 
-}
+// function change(input) {
+//     console.log(input);
+// }
 
  
 // Opr 4)

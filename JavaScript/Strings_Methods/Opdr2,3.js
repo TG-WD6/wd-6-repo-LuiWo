@@ -1,6 +1,6 @@
 let someKittens = "Die nieuwe kittens zijn zo schattig!";
 
-let newArray = someKittens.split([" "]);
+let newArray = someKittens.split(" ");
 console.log(newArray);
 
 // ['Die', 'nieuwe', 'kittens', 'zijn', 'zo', 'schattig!']
