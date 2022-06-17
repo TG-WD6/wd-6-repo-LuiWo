@@ -12,17 +12,17 @@ var input = document.getElementById(inputField);
 
 
 // Opdr 3)
-// function change(input) {
-//     console.log(input);
-// }
+function change(input) {
+    console.log(input);
+}
 
  
 // Opr 4)
-var input = document.getElementById(inputField);
+// var input = document.getElementById(inputField);
 
 
-function change(input) {
-    console.log(input);
-    var result = console.log(input * 2);
-    return result ; 
-}
+// function change(input) {
+//     console.log(input);
+//     var result = console.log(input * 2);
+//     return result ; 
+// }

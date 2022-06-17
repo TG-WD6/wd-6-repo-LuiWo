@@ -1,66 +1,33 @@
 
-// var names = (Esther, Madhwi, Nathan);
-var names = document.getElementById("nameInput");
-var teamOne = "Esther";
-var teamTwo = "Madhwi";
-var teamThree = "Nathan";
+let input = nameInput.value;
+  var teamOne = "Esther";
+  var teamTwo = "Madhwi";
+  var teamThree = "Nathan";
 
+function nameChecker(input) {
 
+  let outCome;
+  let howdy = "Welcome";
+  let wrong = "Sorry, I don't know you";
 
+  if (input == teamOne || input == teamTwo || input == teamThree) {
+    outCome = console.log(howdy+ " " + input);
+    return outCome;
 
+  } else {
+    outCome = console.log(wrong);
+    return outCome;
 
-function nameChecker(names) {
-  // Use DOM to get the input value and save it in the above var 
-  // Function if/else it's own and then link into nameChecker
-
-  if (names == teamOne || names == teamTwo || names == teamThree) {
-    let result = console.log("Welcome " + names)
-
-  } else 
-      { let result = console.log("Name not recognized")
-      }
-
-
- let inputNames = result;     
- return inputNames
+  }
 };
 
 
+function myFunction(nameChecker) {
 
 
-// var inputNames = document.getElementsByTagName("input").innerText =" I should be working"; 
-
-
-var resultChecker = (nameChecker(names), {return: result});
-// var resultChecker = "I better fucking be working soon";
-// console.log(resultChecker + " I work");
-
-
-
-function placeResults() {
-  // Use DOM to get the input value and save it in the above var 
-   document.querySelector("p").innerText = ("Welcome, " + resultChecker);
+  let result = document.createElement("p");
+  let newSentence = nameInput.value;
+  result.innerText = ("Welcome " + newSentence);
+  document.body.appendChild(result);
 };
 
-
-
-
-
-// var resultChecker = function nameChecker(names) {return endChecker};
-// var result = resultChecker(names);
-// console.log(result + " I work");
-
-
-// const x = function(names) {return endChecker};
-// console.log(x);
-
-
-
-
-// {return}
-// var resultChecker = nameChecker(names);
-// console.log(resultChecker);
-
-// Store result from first function 
-// let resultChecker = nameChecker();
-// console.log(resultChecker);
