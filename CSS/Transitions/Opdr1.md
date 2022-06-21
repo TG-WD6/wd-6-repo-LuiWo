@@ -1,0 +1,1 @@
+Transitions is when an element property changes from one state to another in a certain time frame. It makes an element more interactive depending on the animation trigger. 

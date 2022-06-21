@@ -1,0 +1,65 @@
+
+$borderStandard: 4px solid white;
+$width-name: max-device-width;
+$target-width:(
+    "mobile": 480px,
+    "tablet": 768px,
+    "laptop": 1600px,
+);
+
+$border-design: (
+    "solidBorder": 4px solid blue,
+    "dottedBorder": 4px dotted yellow,
+    "dashedBorder": 4px dashed red,
+
+);
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    border: $borderStandard;
+}
+
+@media screen and ($width-name : map-get($target-width, laptop)) {
+    h1 {
+        background-color: blue;
+    }
+  
+    .container {
+         border: map-get($border-design, solidBorder);
+    }
+  }
+
+
+@media screen and ($width-name : map-get($target-width,tablet)) {
+    h1 {
+        background-color: yellow; 
+    }
+
+    .container {
+        border: map-get($border-design, dottedBorder);
+   }
+  }
+
+@media screen and ($width-name : map-get($target-width, mobile)) {
+    h1 {
+        background-color: red; 
+    }
+    
+    .container {
+        border: map-get($border-design, dashedBorder);
+   }
+  }
+
+ 
+.container-child {
+    @extend .container;
+    width: 50%;
+    height:auto;
+    margin: auto;
+}

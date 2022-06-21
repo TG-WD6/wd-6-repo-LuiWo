@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    background-color: darkslategray;
+    width: 90%;
+    height: 700px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    padding:25px;
+    margin: 5px;
+    background-color: cadetblue;
+    text-align: center; 
+}

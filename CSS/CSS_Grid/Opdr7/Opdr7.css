@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 20vh); 
+    gap: 10px;
+}
+
+.gridBox {
+    border: black solid 1px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+   
+}
+
+.leftSidebar {
+  background-color: lightgreen;
+}
+

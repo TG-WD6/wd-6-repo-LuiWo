@@ -1,0 +1,7 @@
+h1 {
+    border: solid 1p black;
+    color: rgb(255, 0, 0);
+    position: sticky;
+    left: 50px;
+    top: 100px;
+}

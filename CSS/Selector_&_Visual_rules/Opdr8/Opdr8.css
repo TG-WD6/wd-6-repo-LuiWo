@@ -1,0 +1,10 @@
+.example {
+    color: red;
+    font-size: small;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 200px;
+    color: purple;
+}

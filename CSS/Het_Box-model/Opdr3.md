@@ -1,0 +1,1 @@
+Inline boxes aren't effected by width and height. vertical changed in padding, margins, and borders will apply but not effect othe inline boxes.

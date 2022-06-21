@@ -1,0 +1,1 @@
+fr => is called the fraction unit. Only used in  CSS Grid Layout. This uses a fraction of the available space. Depending the number infront of the fr the more space an element takes up than another element.

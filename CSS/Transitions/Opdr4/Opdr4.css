@@ -1,0 +1,98 @@
+.container {
+    width: 700px;
+    border: 1px solid black;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    padding: 35px 5px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 2px;
+}
+
+@keyframes topRight {
+    0% {transform: translate(0,0)}
+    25% {transform: translate(0px, -167px)}
+    50% {transform: translate(305px, -235px)}
+    75% {transform: translate(305px, -167px)}
+    100% {transform: translate(0px, 0px)}
+}
+
+@keyframes topLeft {
+    0% {transform: translate(0,0)}
+    25% {transform: translate(0px, -167px)}
+    50% {transform: translate(-305px, -235px)}
+    /* :hover::after ?? */
+    75% {transform: translate(-305px, -167px)}  
+    100% {transform: translate(0px, 0px)}
+}
+
+@keyframes bottomLeft {
+    0% {transform: translate(0,0)}
+    25% {transform: translate(-305px, 0px)}
+    50% {transform: translate(-305px, 235px)}
+    /* :hover::after ?? */
+    75% {transform: translate(0px, 235px)}  
+    100% {transform: translate(0px, 0px)}
+}
+
+
+.container:hover .box1 {
+    /* transform: translate(305px, -235px); */
+    animation-name: topRight;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+}
+
+
+.container:hover .box2 {
+    /* transform: translate(-305px, -235px); */
+    animation-name: topLeft;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: forwards;
+
+    /* animation-direction: alternate; */
+}
+
+.container:hover .box3 {
+    /* transform: translate(-305px, 235px);
+     */
+     animation-name: bottomLeft;
+     animation-duration: 5s;
+     animation-iteration-count: 1;
+     /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: forwards;
+
+     /* animation-direction: alternate; */
+}
+
+
+
+
+/* .box1 {
+     transition: transform 5000ms linear;
+}  */
+
+/* .box2 {
+     transition: transform 5000ms linear;
+} */
+
+/* .box3 {
+    transition: transform 5000ms linear;
+}
+/*
+
+

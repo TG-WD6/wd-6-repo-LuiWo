@@ -1,0 +1,32 @@
+.container {
+    display: block;
+    width: auto;
+}
+
+.textImg {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 200px;
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+span {
+  color: white;
+}
+
+p {
+    color: yellow;
+}
+
+.imageBox {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 99%;
+    height: 100vh;
+    opacity: 0.9;
+}

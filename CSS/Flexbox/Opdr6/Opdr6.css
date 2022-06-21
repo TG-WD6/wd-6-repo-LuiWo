@@ -1,0 +1,35 @@
+.container {
+    background-color: rgb(124, 226, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 450px;
+}
+
+.box {
+    padding: 15px;
+    margin-left: 0px;
+    background-color: rgb(227, 104, 233);
+    text-align: center;
+}
+
+.first {
+    width: 100%;
+}
+
+.second {
+    width: 40%;
+}
+.third {
+    width: 50%;
+}
+.fourth {
+    width: 60%;
+}
+.fifth {
+    width: 35%;
+}
+.sixth {
+    width: 20%;
+}

@@ -1,0 +1,11 @@
+#rainbow {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 300px;
+}
+
+h1, p {
+    position: relative;
+    z-index: 5;
+}

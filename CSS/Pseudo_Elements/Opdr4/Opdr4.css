@@ -1,0 +1,63 @@
+body {
+    color: white;
+    text-align: center;
+}
+
+
+.container {
+    border: solid 1px black;
+    width: 300px;
+}
+
+.circle {
+    background-color: black;
+    border: solid, 1px, black;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: relative;
+    top: 35px;
+    left: 55px;
+}
+
+
+.oval {
+    background-color: black;
+    border: solid, 1px, black;
+    width: 220px;
+    height: 25px;
+    border-radius: 35px;
+    position: relative;
+    bottom: 90px;
+    left: 10px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 2.5rem;
+}
+
+.dot{
+   background-color: white;
+   border: solid, 1px, black;
+   width: 7px;
+   height: 7px;
+   border-radius: 100%;
+}
+
+.dotLeft {
+   position: relative;
+   bottom: 145px;
+   left: 55px;
+}
+
+.dotRight {
+    position: relative;
+    bottom: 125px;
+    left: 225px;
+}
+
+
+
+/* BEFORE  */
+

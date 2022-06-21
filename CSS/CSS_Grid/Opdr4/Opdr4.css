@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(50px, 2fr) minmax(200px, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gridBox {
+    border: black solid 1px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.leftSidebar {
+  background-color: lightgreen;
+  grid-row: 2/ span 2;
+}
+
+.topArticle {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.botArticle {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}

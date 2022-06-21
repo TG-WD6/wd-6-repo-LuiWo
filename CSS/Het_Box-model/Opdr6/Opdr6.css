@@ -1,0 +1,21 @@
+#parentBox {
+    background-color: rgb(33, 167, 33);
+    border: solid 1px black;
+}
+
+.headerBox {
+    border: solid 1px black;
+    background-color: rgb(217, 176, 239);
+    text-align: center;
+    padding: 30px 0px;
+    margin: 50px;
+}
+
+.siblingBox {
+    border: solid 1px black;
+    background-color: rgb(217, 176, 239);
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0px 15px;
+}
+

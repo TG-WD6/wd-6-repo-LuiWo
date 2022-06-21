@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    background-color: darkslategray;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding:25px;
+    margin: 5px;
+    background-color: cadetblue;
+    text-align: center;
+}
