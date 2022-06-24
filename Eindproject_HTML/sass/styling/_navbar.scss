@@ -35,10 +35,17 @@ $fontSize: (
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  width: 65%;
+  padding: 0;
 }
 
 .menuMobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#checkbox {
   visibility: hidden;
 }
 
@@ -63,41 +70,41 @@ $fontSize: (
   }
 }
 
-@media screen and (max-width: 575px) and (orientation: portrait) {
-  .navBar {
-    min-width: 450px;
-    margin: auto;
-  }
-}
+// navItem hidden in hamburge menu at ~810
+
+// @media screen and (max-width: 575px) and (orientation: portrait) {
+//   .navBar {
+//     min-width: 450px;
+//     margin: auto;
+//   }
+
+// }
 
 @media (max-width: 850px) {
   .navItems {
-    visibility: hidden;
-    position: absolute;
+    background-color: black;
   }
 
-  .menuMobile {
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+  #menuMobile {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
 
-    span {
-      background-color: white;
-      width: 40px;
-      height: 5px;
-      margin: 3px;
-      position: relative;
-      top: 20px;
-      z-index: 5;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+
+    a {
+      text-decoration: none;
+      color: #232323;
+
+      transition: color 0.3s ease;
     }
 
-    #checkbox {
-      width: 40px;
-      height: 40px;
-      position: relative;
-      bottom: 20px;
-      opacity: 0;
+    a:hover {
+      color: tomato;
     }
   }
 }

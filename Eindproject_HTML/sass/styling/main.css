@@ -39,10 +39,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 65%;
+  padding: 0;
 }
 
 .menuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#checkbox {
   visibility: hidden;
 }
 
@@ -67,44 +78,29 @@
   color: whitesmoke;
 }
 
-@media screen and (max-width: 575px) and (orientation: portrait) {
-  .navBar {
-    min-width: 450px;
-    margin: auto;
-  }
-}
-
 @media (max-width: 850px) {
   .navItems {
-    visibility: hidden;
-    position: absolute;
+    background-color: black;
   }
-  .menuMobile {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 10px;
-  }
-  .menuMobile span {
-    background-color: white;
-    width: 40px;
-    height: 5px;
-    margin: 3px;
+  #menuMobile {
+    display: block;
     position: relative;
-    top: 20px;
-    z-index: 5;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
   }
-  .menuMobile #checkbox {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    bottom: 20px;
-    opacity: 0;
+  #menuMobile a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #menuMobile a:hover {
+    color: tomato;
   }
 }
 
@@ -149,10 +145,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 65%;
+  padding: 0;
 }
 
 .menuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#checkbox {
   visibility: hidden;
 }
 
@@ -177,44 +184,29 @@
   color: whitesmoke;
 }
 
-@media screen and (max-width: 575px) and (orientation: portrait) {
-  .navBar {
-    min-width: 450px;
-    margin: auto;
-  }
-}
-
 @media (max-width: 850px) {
   .navItems {
-    visibility: hidden;
-    position: absolute;
+    background-color: black;
   }
-  .menuMobile {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 10px;
-  }
-  .menuMobile span {
-    background-color: white;
-    width: 40px;
-    height: 5px;
-    margin: 3px;
+  #menuMobile {
+    display: block;
     position: relative;
-    top: 20px;
-    z-index: 5;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
   }
-  .menuMobile #checkbox {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    bottom: 20px;
-    opacity: 0;
+  #menuMobile a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #menuMobile a:hover {
+    color: tomato;
   }
 }
 
@@ -507,10 +499,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 65%;
+  padding: 0;
 }
 
 .menuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#checkbox {
   visibility: hidden;
 }
 
@@ -535,44 +538,29 @@
   color: whitesmoke;
 }
 
-@media screen and (max-width: 575px) and (orientation: portrait) {
-  .navBar {
-    min-width: 450px;
-    margin: auto;
-  }
-}
-
 @media (max-width: 850px) {
   .navItems {
-    visibility: hidden;
-    position: absolute;
+    background-color: black;
   }
-  .menuMobile {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 10px;
-  }
-  .menuMobile span {
-    background-color: white;
-    width: 40px;
-    height: 5px;
-    margin: 3px;
+  #menuMobile {
+    display: block;
     position: relative;
-    top: 20px;
-    z-index: 5;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
   }
-  .menuMobile #checkbox {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    bottom: 20px;
-    opacity: 0;
+  #menuMobile a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #menuMobile a:hover {
+    color: tomato;
   }
 }
 
