@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,KAAK;CAC1B",
+    "sources": [
+        "main.scss",
+        "_navBar.scss",
+        "_clock.scss",
+        "_cardGenerator.scss",
+        "_carousel.scss",
+        "_commentSection.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
