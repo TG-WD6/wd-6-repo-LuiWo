@@ -1,5 +1,7 @@
 .navBar {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 90px;
   display: -webkit-box;
@@ -13,6 +15,8 @@
           align-items: center;
   background-color: #3b043b;
   padding: 0 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border: 5px solid whitesmoke;
 }
 
@@ -64,6 +68,8 @@
   text-decoration: none;
   display: block;
   padding: 40px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navMenu ul li a:hover {
@@ -123,16 +129,20 @@
 
 .navMenu input:checked ~ .hamburgerMenu::before {
   top: 0;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   width: 30px;
 }
 
 .navMenu input:checked ~ .hamburgerMenu::after {
   top: 0;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
   width: 30px;
+}
+
+.navMenu input:checked ~ ul {
+  right: 0;
 }
 
 @media screen and (max-width: 645px) {
@@ -153,8 +163,10 @@
             align-items: start;
     position: fixed;
     top: 70px;
-    right: 0;
+    right: -100%;
     background-color: #3b043b;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
     width: 100%;
     height: 100%;
     padding-top: 30px;
@@ -163,7 +175,9 @@
 }
 
 .navBar {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 90px;
   display: -webkit-box;
@@ -177,6 +191,8 @@
           align-items: center;
   background-color: #3b043b;
   padding: 0 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border: 5px solid whitesmoke;
 }
 
@@ -228,6 +244,8 @@
   text-decoration: none;
   display: block;
   padding: 40px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navMenu ul li a:hover {
@@ -287,16 +305,20 @@
 
 .navMenu input:checked ~ .hamburgerMenu::before {
   top: 0;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   width: 30px;
 }
 
 .navMenu input:checked ~ .hamburgerMenu::after {
   top: 0;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
   width: 30px;
+}
+
+.navMenu input:checked ~ ul {
+  right: 0;
 }
 
 @media screen and (max-width: 645px) {
@@ -317,8 +339,10 @@
             align-items: start;
     position: fixed;
     top: 70px;
-    right: 0;
+    right: -100%;
     background-color: #3b043b;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
     width: 100%;
     height: 100%;
     padding-top: 30px;
@@ -575,7 +599,9 @@
 }
 
 .navBar {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 90px;
   display: -webkit-box;
@@ -589,6 +615,8 @@
           align-items: center;
   background-color: #3b043b;
   padding: 0 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border: 5px solid whitesmoke;
 }
 
@@ -640,6 +668,8 @@
   text-decoration: none;
   display: block;
   padding: 40px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navMenu ul li a:hover {
@@ -699,16 +729,20 @@
 
 .navMenu input:checked ~ .hamburgerMenu::before {
   top: 0;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   width: 30px;
 }
 
 .navMenu input:checked ~ .hamburgerMenu::after {
   top: 0;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
   width: 30px;
+}
+
+.navMenu input:checked ~ ul {
+  right: 0;
 }
 
 @media screen and (max-width: 645px) {
@@ -729,8 +763,10 @@
             align-items: start;
     position: fixed;
     top: 70px;
-    right: 0;
+    right: -100%;
     background-color: #3b043b;
+    border-left: 5px solid whitesmoke;
+    border-right: 5px solid whitesmoke;
     width: 100%;
     height: 100%;
     padding-top: 30px;
