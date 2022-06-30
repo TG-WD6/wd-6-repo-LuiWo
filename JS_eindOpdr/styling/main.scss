@@ -3,3 +3,10 @@
 @import "_cardGenerator";
 @import "_carousel";
 @import "_commentSection";
+
+
+
+*, *::after, *::before {
+    box-sizing:  border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
