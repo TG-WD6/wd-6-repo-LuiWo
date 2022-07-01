@@ -1,0 +1,84 @@
+@import "variable_styling";
+
+.container {
+  border: 1px solid black;
+  margin: 50px auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+
+  .formInput {
+    margin: 5px auto;
+    width: 80%;
+    font-size: 1.5rem;
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      font-size: 1.25rem;
+    }
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    span {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+  }
+  
+  a {
+    position: relative;
+    bottom: 30px;
+    left: 200px;
+    margin: 0;
+    font-size: 1.25rem;
+    margin: 0 11px;
+    width: 40%;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: blue;
+  }
+
+
+  button {
+    font-size: map-get($fontSize, large);
+    padding: 5px;
+    margin: 10px auto;
+    width: 70%;
+    background-color: blue;
+    color: white;
+  }
+
+  .loginImg {
+    width: auto;
+    margin: auto;
+    align-self: center;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    min-width: 400px;
+    margin: 50px 26px;
+
+    input {
+      width: auto;
+      margin: auto;
+    }
+
+  }
+}

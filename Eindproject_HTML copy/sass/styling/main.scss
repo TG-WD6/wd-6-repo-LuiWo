@@ -1,0 +1,19 @@
+@import "variable_styling";
+@import "navbar";
+@import "login";
+@import "product_card";
+@import "footer";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:white;
+}
+
+
+
+

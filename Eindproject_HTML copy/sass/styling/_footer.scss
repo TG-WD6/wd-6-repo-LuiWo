@@ -1,0 +1,84 @@
+@import "variable_styling";
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(128, 128, 128, 0.053);
+
+  div {
+    @extend footer;
+    background-color: rgba(128, 128, 128, 0);
+  }
+}
+
+.footerNav {
+  margin: 25px 50px;
+  list-style: none;
+  text-align: left;
+  min-width: 150px;
+
+  p {
+    font-weight: bolder;
+    margin-top: 1px;
+  }
+
+  li {
+    padding: 5px;
+    margin: 2px;
+    color: gray;
+  }
+
+  a {
+    text-decoration: none;
+    span {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  a:visited {
+    color: gray;
+  }
+}
+
+.socialsContainer {
+  @extend .footerNav;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+    p {
+    padding-bottom: 5px;
+  }
+}
+
+.socialsIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: map-get($fontSize, large);
+
+
+
+  img {
+    width: 30px;
+    height: 30px;
+    padding: 2px 3px;
+  }
+}
+
+@media screen and (max-width: 495px) and (orientation: portrait) {
+  footer {
+    min-width: 420px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerNav {
+    margin: 5px;
+  }
+}
+
+
