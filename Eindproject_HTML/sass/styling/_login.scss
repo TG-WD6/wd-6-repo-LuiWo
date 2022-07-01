@@ -1,4 +1,4 @@
-@import "navbar";
+@import "variable_styling";
 
 .container {
   border: 1px solid black;
@@ -41,7 +41,13 @@
     font-size: 1.25rem;
     margin: 0 11px;
     width: 40%;
+    text-decoration: none;
   }
+
+  a:visited {
+    color: blue;
+  }
+
 
   button {
     font-size: map-get($fontSize, large);
@@ -64,7 +70,7 @@
   }
 }
 
-@media (max-width: 460px) {
+@media screen and (max-width: 460px) {
   .container {
     min-width: 400px;
     margin: 50px 26px;
@@ -73,5 +79,6 @@
       width: auto;
       margin: auto;
     }
+
   }
 }
