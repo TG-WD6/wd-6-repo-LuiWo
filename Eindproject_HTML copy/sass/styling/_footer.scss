@@ -18,6 +18,8 @@ footer {
   list-style: none;
   text-align: left;
   min-width: 150px;
+  font-size: map-get($fontSize, 1rem);
+  font-family: map-get($fontFamily, WorkSans);
 
   p {
     font-weight: bolder;

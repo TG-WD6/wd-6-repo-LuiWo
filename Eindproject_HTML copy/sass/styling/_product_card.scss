@@ -2,6 +2,7 @@
 
 .productContainer {
   width: 99%;
+  font-family: map-get($fontFamily, WorkSans );
 }
 
 .productCard {
@@ -26,13 +27,16 @@
 
   h3 {
     margin: 2px 0;
-    font-size: map-get($fontSize, medium);
+    font-size: map-get($fontSize, normal);
   }
 
   h4 {
     margin: 2px 0;
     font-weight: lighter;
+    line-height: 1.25rem;
+    
   }
+
 }
 
 .productImg {
