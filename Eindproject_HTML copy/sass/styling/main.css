@@ -19,8 +19,6 @@
   transition: 0.3s;
   border: 5px solid whitesmoke;
   z-index: 10;
-  font-family: "Work Sans";
-  font-size: 1.25rem;
 }
 
 .navLogo a {
@@ -176,8 +174,8 @@
   }
   li {
     left: 0;
-    -webkit-transition: left 1s linear;
-    transition: left 1s linear;
+    -webkit-transition: left 2s linear;
+    transition: left 2s linear;
   }
   .navMenu input:checked ~ ul li {
     margin: 0;
@@ -220,7 +218,6 @@
       justify-content: space-around;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  font-family: "Work Sans";
 }
 
 .container .formInput {
@@ -244,7 +241,7 @@
 
 .container .formInput span {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .container a {
@@ -252,7 +249,7 @@
   bottom: 30px;
   left: 200px;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 0 11px;
   width: 40%;
   text-decoration: none;
@@ -264,7 +261,6 @@
 
 .container button {
   font-size: 2rem;
-  font-family: "Work Sans";
   padding: 5px;
   margin: 10px auto;
   width: 70%;
@@ -298,7 +294,6 @@
 
 .productContainer {
   width: 99%;
-  font-family: "Work Sans";
 }
 
 .productCard {
@@ -335,13 +330,12 @@
 
 .productDiscription h3 {
   margin: 2px 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .productDiscription h4 {
   margin: 2px 0;
   font-weight: lighter;
-  line-height: 1.25rem;
 }
 
 .productImg {
@@ -487,7 +481,6 @@ footer div {
   list-style: none;
   text-align: left;
   min-width: 150px;
-  font-family: "Work Sans";
 }
 
 .footerNav p, .socialsContainer p {
