@@ -1,12 +1,6 @@
-import setAnalog from './clock.js';
-// import  from './carousel.js';
+import './clock.js';
+import './carousel.js';
+import './search.js';
 
-
-
-//Clock opdracht
-setAnalog();
-
-
-// Carousel opdracht
 
 

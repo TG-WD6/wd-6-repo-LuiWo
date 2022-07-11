@@ -1,0 +1,35 @@
+.comment {
+
+    width: 100%;
+}
+
+.containerComment {
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+fieldset {
+    border: 1px solid black;
+    margin: auto;
+    width: 80%;
+
+
+    img {
+        width: 75px;
+        height: 75px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .comment {
+        min-width: 400px;
+    }
+    
+    fieldset { 
+      padding: 5px;
+    }
+}

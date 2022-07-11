@@ -218,13 +218,46 @@
      object-position: center;
 }
 
-.active {
+li[data-active] {
   opacity: 1;
 }
 
 @media screen and (max-width: 600px) {
   .carousel {
     min-width: 400px;
+  }
+}
+
+.comment {
+  width: 100%;
+}
+
+.containerComment {
+  background-color: whitesmoke;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+}
+
+fieldset {
+  border: 1px solid black;
+  margin: auto;
+  width: 80%;
+}
+
+fieldset img {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 472px) {
+  .comment {
+    min-width: 400px;
+  }
+  fieldset {
+    padding: 5px;
   }
 }
 
@@ -238,30 +271,38 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 200px;
   margin: auto;
 }
 
+.search button {
+  width: 25%;
+  font-size: 1.1rem;
+}
+
+.search #clearInput {
+  width: 35%;
+}
+
+.search #removeSearchData {
+  width: 50%;
+}
+
+.search p {
+  font-size: 1.25rem;
+}
+
 .searchBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 60%;
-  height: 80%;
+  width: 50%;
   padding: 20px;
   background-color: aquamarine;
   border: 1px black solid;
 }
 
 .searchBar label {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,23 +310,27 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 70%;
 }
 
-.searchBar label input[type=search] {
+.searchBar label input[type="search"] {
   padding: 10px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 5px 0;
   border-radius: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .search {
     min-width: 400px;
     margin: auto;
   }
   .search .searchBar {
     width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

@@ -3,45 +3,56 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 200px;
   margin: auto;
-//   background-color: aquamarine;
-//   border: 1px black solid;
+
+  button {
+    width: 25%;
+    font-size: 1.1rem;
+  }
+
+  #clearInput {
+    width: 35%;
+  }
+
+  #removeSearchData {
+    width: 50%;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 .searchBar {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  width: 60%;
-  height: 80%;
+  width: 50%;
   padding: 20px;
   background-color: aquamarine;
   border: 1px black solid;
 
   label {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
 
-   input[type=search]{
-    padding: 10px;
-    font-size: 1.25rem;
-    margin: 5px 0;
-    border-radius: 20px;
-   }
+    input[type="search"] {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 5px 0;
+      border-radius: 20px;
+    }
   }
 }
 
+@media screen and (max-width: 860px) {
+  .search {
+    min-width: 400px;
+    margin: auto;
 
-@media screen and (max-width: 600px) {
-    .search {
-        min-width: 400px;
-        margin: auto;
-
-        .searchBar {
-            width: 90%;
-        }
+    .searchBar {
+      width: 90%;
+      flex-direction: column;
     }
+  }
 }

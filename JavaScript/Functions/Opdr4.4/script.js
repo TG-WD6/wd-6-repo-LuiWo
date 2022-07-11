@@ -10,7 +10,7 @@ function nameChecker(input) {
   let howdy = "Welcome";
   let wrong = "Sorry, I don't know you";
 
-  if (input == teamOne || input == teamTwo || input == teamThree) {
+  if (input === teamOne || input === teamTwo || input === teamThree) {
     outCome = console.log(howdy+ " " + input);
     return outCome;
 
@@ -22,9 +22,11 @@ function nameChecker(input) {
 };
 
 
-function myFunction(nameChecker) {
+function myFunction(input) {
 
+  nameChecker(input);
 
+  
   let result = document.createElement("p");
   let newSentence = nameInput.value;
   result.innerText = ("Welcome " + newSentence);

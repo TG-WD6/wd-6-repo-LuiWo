@@ -48,10 +48,12 @@
 
     <hr />
     <section class="carousel">
-      <div class="containerCarousel">
-        <button class="backClick">Click Me</button>
-        <ul>
-          <li class="photoSlider active">
+      <div class="containerCarousel" data-carousel>
+        <button class="backClick carouselButton" data-carousel-button="back">
+          Click Me
+        </button>
+        <ul data-slides>
+          <li class="photoSlider" data-active="true">
             <img
               src="https://images.unsplash.com/photo-1656917437375-0574d4dcd07e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             />
@@ -66,35 +68,79 @@
               src="https://images.unsplash.com/photo-1656917224554-866e7df9588b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
             />
           </li>
-
-          <button class="forwardClick">Click Me</button>
         </ul>
+        <button class="forwardClick carouselButton" data-carousel-button="next">
+          Click Me
+        </button>
       </div>
     </section>
     <hr />
 
     <section class="comment">
       <div class="containerComment">
-        <div class="postedComments">
-          create a container that has profile img, added text and a reply
-          button. Counts the number of the user when commented.
-        </div>
-        <div class="commentingField">
-          <input type="textarea" />added comment. <input type="text" required />from who.
-          <button class="submitComment"></button>
-        </div>
-      </div>
+        <fieldset class="postedComments">
+          <legend>User Comments</legend>
+          <div class="userComments">
+            <img src="#" />
+            <span class="userName">UserName</span>
+            <span class="userCounter">#</span>
+            <p>
+              create a container that has profile img, added text and a reply
+              button. Counts the number of the user when commented.
+            </p>
+            <button>Reply</button>
+            <button>Edit</button>
+            <button>Delete!</button>
+          </div>
+        </fieldset>
+        
+        <br />
+        <br />
+      <form >
+        <fieldset class="commentingField">
+          <legend>Leave a Comment</legend>
+          <label for="commentInput"></label>
+          <textarea
+            id="commentInput"
+            name="commentInput"
+            cols="40"
+            rows="10"
+            placeholder="Add your own comment"
+          ></textarea>
+          <br />
+          <input type="text" required />From.
+          <select id="selectProfilePic" name="selectProfilePic">
+            <option value="img1">img1</option>
+            <option value="img2">img2</option>
+            <option value="img3">img3</option>
+          </select>
+          <br>
+          <button class="submitComment">Post!</button>
+        </fieldset>
+      </form>
+    </div>
     </section>
     <hr />
 
     <section class="search">
-      <div class="searchBar">
+      <form class="searchBar" role="search">
         <label for="userInput"
-          >Search here!
-          <!-- <br> -->
-          <input type="search" id="userInput" name="userInput" />
+          >Search for a topic:
+          <input
+            type="text"
+            id="userInput"
+            name="userInput"
+            autocomplete="off"
+          />
+          <button id="submitSearch">Search</button>
+          <button id="clearInput" type="reset">Clear</button>
         </label>
-      </div>
+
+        <br />
+
+        <p>Want to clear your search history?</p>
+        <button id="removeSearchData">Clear Search History!</button>
+      </form>
     </section>
   </body>
 </html>

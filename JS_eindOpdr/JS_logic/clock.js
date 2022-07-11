@@ -24,4 +24,4 @@ setAnalog();
 
 
 
-export default {setAnalog};
+export default {};
